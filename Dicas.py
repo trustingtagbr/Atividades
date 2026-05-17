@@ -1,7 +1,6 @@
-a = 1
-b = 2
+a = 59
+b = 13
 
-s = a + b
 "syntax = print(' STR {} '.format (Var) )"
 "Essa técnica é a mesma vista em C, para fazer as variáveis aparecerem dentro da string. Isso por meio de abreviações como o (f%)"
 """ print('A soma vale {}'.format(s)) """
@@ -14,11 +13,18 @@ s = a + b
 "conversão para  .isalpha()"
 "verificar alpha numérico.isalnum()"
 
+#RAIZ QUADRADA E CÚBICA DE UM NÚMERO:
+
+""" print(81**(1/2))
+print(81**(1/3)) """
+
 num1 = 2
 num2 = 9
 
-soma = 2 + 9
+print('divisão: {:.2f}'.format(a/b))
+
+""" soma = 2 + 9 """
 
 #print("A soma dos Números {} e {} injetados é {}".format(num1,num2,soma))
 
-teste = bool(input())
+""" teste = bool(input()) """

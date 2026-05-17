@@ -1,6 +1,16 @@
-i = 0
+""" a = 34.2213123132131321
 
-while i == 0:
-    i = i + 1
-    print(i)
-    
+
+print(round (a,1) )
+ """
+ 
+""" print(5 // 2)
+print(5 / 2)
+
+
+print( 2 - 3 * 5)
+print( 2 - (3 * 5))
+ """
+nome = input("nome :")
+ 
+print('nome {:>20}!'.format(nome))
