@@ -7,6 +7,6 @@ print('Seu Número: {}'.format(A))
 
 time.sleep(0.5)
 
-print('Dobro: {}'.format(pow(A,2)))
-print('Triplo: {}'.format(pow(A,3)))
+print('Dobro: {}'.format(A * 2))
+print('Triplo: {}'.format(A * 3))
 print('Raiz Quadrada: {:.3f}'.format(pow(A,(1/2))))
