@@ -8,3 +8,10 @@ CatAd = float(input('Insira o Cateto Adjacente: '))
 hip = math.hypot(CatOp,CatAd)
 
 print('Hipostenusa dos Catetos selecionados: {}'.format(math.trunc(hip)))
+
+#==============================================================================
+
+catops = float(input('Oposto: '))
+catadjs = float(input('Adjacente: '))
+hi =  (catops ** 2 + catadjs ** 2) ** (1/2)
+print(hi)
