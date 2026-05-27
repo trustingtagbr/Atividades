@@ -1,6 +1,7 @@
 #FAÇA UM PROGRAMA QUE LEIA UM NÚMERO DE 0 A 9999 E MOSTRE N TELA CADA UM DOS DÍGITOS SEPARADOS.
 
 num = int(input('Insira um Número com apenas 4 casas decimais: '))
+
 #Verificação de quantidade de Casas
 while len(str(num)) > 5:
     print('Apenas 4 casas decimais')
@@ -8,11 +9,14 @@ while len(str(num)) > 5:
     
 print('Número Aceito: {}'.format(num))
 #=======================================
+
 size = num.__str__().__len__()
+
 numStrig = num.__str__()
 
     
 casas = ['Milhar','Centena','Dezena','Unidade']
+
 i = 0
 
 Arbt = 0
