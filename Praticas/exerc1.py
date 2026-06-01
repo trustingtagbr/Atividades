@@ -33,16 +33,28 @@ cadastros = int(input('Quantos Alunos serão cadastrados? '))
 print(cadastros)
 
 alunos = []
-
+soma = 0
+#CADASTRO DE ALUNOS
 for i in range(cadastros):
     nome = input('Insira Seu Nome: ')
-    nota = input('Insira Sua Nota: ')
+    nota = float(input('Insira Sua Nota: '))
     
     aluno = [nome,nota]
     alunos.append(aluno)
-
-print('Quantidade de Alunos Cadastrados:{}'.format(cadastros))
+#SOMA DAS NOTAS
 for i in range(len(alunos)):
-    for j in range(len(alunos[i])):
-        print(alunos[i][j])
+    soma += alunos[i][1]
+    
+print('-'*10)
+
+maiorNota = max(aluno[1] for aluno in alunos)
+menorNota = min(aluno[1] for aluno in alunos)
+
+#PRINTAS OS ALUNOS E SUAS NOTAS
+for i,aluno in enumerate(alunos): # aluno entrou dentro da lista de 'ALUNOS' e se tornou o index 0
+    for j,dados in enumerate(aluno): # dados entrou dentro do index que aluno se tornou, ou seja [0]'esse zero representa o alunos'[0]'esse zero representa a lista que tem Nome e Nota'
+        print(f'Índice [{i}] [{j}] = {dados}')  # começa com o index [0] que é o nome do aluno e depois vai para o index[1] que é a nota/ Após isso, o aluno troca o seu index e o dados reseta
     print('-'*10)
+print('Média da Turma: {}'.format( soma/cadastros ))
+print('Maior Nota:{}'.format(maiorNota))
+print('Menor Nota:{}'.format(menorNota))
