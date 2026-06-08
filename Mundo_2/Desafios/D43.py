@@ -1,5 +1,7 @@
 #CRIE UM PROGRAMA QUE FAÇA O COMPUTADOR JOGAR JOKENPÔ COM VOCÊ
 import random
+import os
+os.system('cls')
 
 list = ['pedra','papel','tesoura']
 maquina = random.choice(list)

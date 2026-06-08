@@ -9,7 +9,9 @@ parcelamento = int(input('Quantos Anos deseja Pagar? ')) * 12
 # Verificação
 prestacao = casa / parcelamento
 
-if prestacao > (salario * 0.3):
-    print('Sexo')
+if prestacao < (salario * 0.3):
+    print('Possível')
+    print('Prestação: {:2.f}'.format(prestacao))
 else:
-    print('Sem sexo')
+    print('Impossível')
+    print('Prestação: {:2.f}'.format(prestacao))

@@ -12,7 +12,7 @@ x = 2
 soma = 0
 print('='*10)
 for notas in range(x):
-    notes = int( input ('Qual a sua Nota ? '))
+    notes = float( input ('Qual a sua Nota ? '))
     print("-"*10)
     aluno.append(notes)
     
@@ -24,7 +24,7 @@ print('Sua média: {}'.format(Media))
 print('='*10)
 if Media <= 5.0:
     print('Tá fudido')
-elif Media >= 5.0 and Media <= 6.9:
+elif   7 > Media >= 5.0:
     print('Dá pa viver ainda')
 else:
     print('Tá vivo')
