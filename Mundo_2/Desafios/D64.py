@@ -7,7 +7,8 @@ soma = num
 cont = 0
 while num != 999:
     num = int(input("Digite um número:"))
-    soma += num
-    cont += 1
+    if num != 999:
+        soma += num
+        cont += 1
 print("Somatorio:{}".format(soma))
 print("Contagem:{}".format(cont))

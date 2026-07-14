@@ -23,7 +23,7 @@ while user != 5:
     if user == 1:
         os.system("clear")
         print("=" * 10)
-        print(val_1 + val_2)
+        print(f"A soma dos valores {val_1} e {val_2} é: {val_1 + val_2}")
         print("=" * 10)
 
     elif user == 2:
